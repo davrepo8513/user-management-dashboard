@@ -146,10 +146,6 @@ const UserFormModal = ({
       newErrors.username = 'Username is required';
     }
 
-    if (formData.phone && !/^[\d\s\-\(\)\+\.x]+$/.test(formData.phone)) {
-      newErrors.phone = 'Please enter a valid phone number';
-    }
-
     if (formData.website && !/^https?:\/\/.+\..+/.test(formData.website)) {
       newErrors.website = 'Please enter a valid website URL (include http:// or https://)';
     }
